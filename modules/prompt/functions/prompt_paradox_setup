@@ -62,7 +62,7 @@ function prompt_paradox_pwd {
     _prompt_paradox_pwd="$MATCH"
     unset MATCH
   else
-    _prompt_paradox_pwd="${${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}//\%/%%}/${${pwd:t}//\%/%%}"
+    _prompt_paradox_pwd="$pwd"
   fi
 }
 
